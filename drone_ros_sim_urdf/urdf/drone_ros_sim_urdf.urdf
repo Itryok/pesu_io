@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="drone_ros_sim_urdf">
+  <link
+    name="frame">
+    <inertial>
+      <origin
+        xyz="-0.00033488 -8.1535E-05 0.46442"
+        rpy="0 0 0" />
+      <mass
+        value="7.9807" />
+      <inertia
+        ixx="0.033649"
+        ixy="1.2106E-06"
+        ixz="-2.0293E-06"
+        iyy="0.029642"
+        iyz="-1.0527E-07"
+        izz="0.046218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/frame.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/frame.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="prop1_ccw">
+    <inertial>
+      <origin
+        xyz="0.45342 0.45343 0.54325"
+        rpy="0 0 0" />
+      <mass
+        value="0.10735" />
+      <inertia
+        ixx="0.00027815"
+        ixy="0.00028006"
+        ixz="1.0025E-08"
+        iyy="0.00030502"
+        iyz="-8.1576E-09"
+        izz="0.00058081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop1_ccw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop1_ccw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="frame" />
+    <child
+      link="prop1_ccw" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="9.55"
+      velocity="10.472" />
+  </joint>
+  <link
+    name="prop2_ccw">
+    <inertial>
+      <origin
+        xyz="-0.45273 -0.45272 0.54325"
+        rpy="0 0 0" />
+      <mass
+        value="0.10735" />
+      <inertia
+        ixx="0.00027815"
+        ixy="0.00028006"
+        ixz="1.0025E-08"
+        iyy="0.00030502"
+        iyz="-8.158E-09"
+        izz="0.00058081" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop2_ccw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop2_ccw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="frame" />
+    <child
+      link="prop2_ccw" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="9.55"
+      velocity="10.472" />
+  </joint>
+  <link
+    name="prop3_cw">
+    <inertial>
+      <origin
+        xyz="-0.45342 0.45343 0.54325"
+        rpy="0 0 0" />
+      <mass
+        value="0.10734" />
+      <inertia
+        ixx="0.00027811"
+        ixy="-0.00028002"
+        ixz="-1.0035E-08"
+        iyy="0.00030496"
+        iyz="-8.1513E-09"
+        izz="0.00058072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop3_cw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop3_cw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="frame" />
+    <child
+      link="prop3_cw" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="9.55"
+      velocity="10.472" />
+  </joint>
+  <link
+    name="prop4_cw">
+    <inertial>
+      <origin
+        xyz="0.45273 -0.45272 0.54325"
+        rpy="0 0 0" />
+      <mass
+        value="0.10734" />
+      <inertia
+        ixx="0.00027813"
+        ixy="-0.00028003"
+        ixz="-1.0044E-08"
+        iyy="0.00030498"
+        iyz="-8.1591E-09"
+        izz="0.00058075" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop4_cw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://drone_ros_sim_urdf/meshes/prop4_cw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="frame" />
+    <child
+      link="prop4_cw" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="9.55"
+      velocity="10.472" />
+  </joint>
+</robot>
